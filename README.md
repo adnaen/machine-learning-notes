@@ -7,11 +7,11 @@
      - Types
          - **Classification**
              - Model Predict Discrete value
-             - e.g. either that is Dog or Cat
+             - e.g. Predicting whether an image is of a dog or cat.
              - Algorithms: `Logistic Regression` `k-Nearest Neighbors` `Support Vector Machine` `Decision Tree Classifier` `Random Forest Classifier` `Naive Bayes`
          - **Regression**
              - Model Predict Continues value
-             - e.g. predict the quantity of the rain
+             - e.g.  Predicting the amount of rainfall.
              - Algorithms: `Linear Regression` `Lasso Regression` `Polynomial Regression` `Support Vector Machine Regressor` `Random Forest Regressor` `Bayesian Linear Regression`
 2. ## Unsupervised Learning
    - Model learn from unlabeled data (dataset does not contain a target variable)
