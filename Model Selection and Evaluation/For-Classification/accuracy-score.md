@@ -6,6 +6,7 @@ Is a evaluation metric for `Classification Models`
 $$\\text{Accuracy Score} = \frac{\text{Number of Correct Predictions}}{\text{Number of Predictions}} \times 100\$$
 
 Let's say
+
 - Number of correct prediction = 128
 - Number of total prediction = 170
 - $$\\text{Accuracy Score} = \frac{128}{170} \times 100 = 75.3\%\$$
