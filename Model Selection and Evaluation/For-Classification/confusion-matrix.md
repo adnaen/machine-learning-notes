@@ -19,4 +19,11 @@ It give more information than Accuracy Score
 ```python
 from sklearn.metrics import confusion_matrix
 
+y_true = [1, 0, 1, 1, 0, 1, 0, 1]  # True labels
+y_pred = [1, 0, 0, 1, 0, 1, 1, 1]  # Predicted labels
+
+# Calculate accuracy
+TN, FP, FN, TP = confusion_matrix(y_true, y_pred).ravel()
+print(f"{TN=}, {TP=}, {FP=}, {FN}")
+
 ```
