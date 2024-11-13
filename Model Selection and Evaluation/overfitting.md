@@ -4,6 +4,8 @@ Overfitting refers to a model that models the training data too well. Overfittin
 
 ![overfit image](../assets/overfit.png)
 
+> Sign that the model has Overfitted: High Training data Accuracy & very low Test data Accuracy
+
 ### Causes for Overfitting
 
 1. Less Data

@@ -4,6 +4,8 @@ Underfitting happens when the model does not learn enough from the data. Underfi
 
 ![underfit image](../assets/underfit.png)
 
+> Sign that the model has Underfitted: Poor performance accuracy on training & testing data
+
 ### Causes for Underfitting
 
 1. Choosing wrong model
