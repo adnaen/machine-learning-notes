@@ -2,6 +2,8 @@
 
 Overfitting refers to a model that models the training data too well. Overfitting happens when a model learns the details the details and noise in the training dataset to the extent that it negatively impacts the performance of the model.
 
+![overfit image](../assets/overfit.png)
+
 ### Causes for Overfitting
 
 1. Less Data

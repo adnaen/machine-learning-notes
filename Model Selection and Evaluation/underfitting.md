@@ -2,6 +2,8 @@
 
 Underfitting happens when the model does not learn enough from the data. Underfitting occurs when a machine learning model cannot capture the underlying trend of the data.
 
+![underfit image](../assets/underfit.png)
+
 ### Causes for Underfitting
 
 1. Choosing wrong model
