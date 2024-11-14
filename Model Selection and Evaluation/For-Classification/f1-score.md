@@ -18,4 +18,4 @@ print(f"f1 Score: {recall:.2f}%")
 
 ```
 
-> Useful when dataset has imbalanced classes
+> Balances precision and recall, useful when you need a single metric that accounts for both in imbalanced datasets.

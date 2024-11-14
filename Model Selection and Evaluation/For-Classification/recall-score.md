@@ -23,3 +23,5 @@ recall = recall_score(y_true, y_pred) * 100
 print(f"Recall Score: {recall:.2f}%")
 
 ```
+
+> Measures how well the model identifies positive instances, useful when false negatives are costly

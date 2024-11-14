@@ -24,4 +24,4 @@ print(f"Accuracy Score: {accuracy:.2f}%")
 
 ```
 
-> cons: Accuracy Score is not reliable when the dataset has uneven distribution of classes
+> Useful when classes are balanced and all errors are equally costly.

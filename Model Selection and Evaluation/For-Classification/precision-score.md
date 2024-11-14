@@ -23,3 +23,5 @@ precision = precision_score(y_true, y_pred) * 100
 print(f"Precision Score: {precision:.2f}%")
 
 ```
+
+> Focuses on the accuracy of positive predictions, used when false positives are costly
