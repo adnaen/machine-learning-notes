@@ -18,6 +18,8 @@
 | [Precision Score](./for-classification/precision-score.md) | The precision of classification, measuring relevant predictions. |
 | [F1 Score](./for-classification/f1-score.md) | A combined measure of precision and recall. |
 
+[Implementation of Classification Models Evaluation Metrics From Scratch Using Python](./for-classification/_evaluation-metrics.ipynb)
+
 > ### Metrics for Regression Models
 
 | Metric | Description |

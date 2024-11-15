@@ -4,4 +4,4 @@
 
 | Model                             | Best for                                              |
 |-----------------------------------|-------------------------------------------------------|
-| [Logistics Regression](./Logistics-regression/)              | Dataset with linear relationship , Binary Classification |
+| [Logistics Regression](./Logistics-Regression/)              | Dataset with linear relationship , Binary Classification |
