@@ -4,10 +4,7 @@
 
 <img src="../../../assets/sigmoid-function.png" width="600x" height="400px" />
 
-\[
-    \hspace*{-15cm}
-    {z = w \cdot x + b}
-\]
+$$\\{z = w \cdot x + b}\$$
 
 - where:
   - w is the weight vector (model coefficients),
@@ -16,10 +13,7 @@
 
 <hr>
 
-\[
-    \hspace*{-15cm}
-    {\text{Sigmoid Function } \hat{y} = \frac{1}{1 + e^{-z}}}
-\]
+$$\\{\text{Sigmoid Function } \hat{y} = \frac{1}{1 + e^{-z}}}\$$
 
 - where:
   - y^ is the predicted probability of the positive class (class 1).
