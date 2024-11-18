@@ -8,20 +8,21 @@
 | [Overfitting](./overfitting.md) | How to detect and mitigate overfitting in models. |
 | [Underfitting](./underfitting.md) | Understanding underfitting and its impact on model performance. |
 
-> ### Metrics for Classification Models
+> ## Metrics for Classification Models
 
 | Metric | Description |
 |--------|------------|
-| [Accuracy Score](./for-classification/accuracy-score.md) | The overall accuracy of classification models. |
-| [Confusion Matrix](./for-classification/confusion-matrix.md) | A detailed matrix showing model predictions vs actual outcomes. |
-| [Recall Score](./for-classification/recall-score.md) | A measure of the true positive rate in classification tasks. |
-| [Precision Score](./for-classification/precision-score.md) | The precision of classification, measuring relevant predictions. |
-| [F1 Score](./for-classification/f1-score.md) | A combined measure of precision and recall. |
+| [Accuracy Score](./classification/accuracy-score.md) | The overall accuracy of classification models. |
+| [Confusion Matrix](./classification/confusion-matrix.md) | A detailed matrix showing model predictions vs actual outcomes. |
+| [Recall Score](./classification/recall-score.md) | A measure of the true positive rate in classification tasks. |
+| [Precision Score](./classification/precision-score.md) | The precision of classification, measuring relevant predictions. |
+| [F1 Score](./classification/f1-score.md) | A combined measure of precision and recall. |
 
-[Implementation of Classification Models Evaluation Metrics From Scratch Using Python](./for-classification/_evaluation-metrics.ipynb)
+[Implementation of Classification Models Evaluation Metrics From Scratch Using Python](./classification/_implementation.ipynb)
 
-> ### Metrics for Regression Models
+> ## Metrics for Regression Models
 
 | Metric | Description |
 |--------|------------|
-| [Mean Absolute Error](./for-regression/Mean-Absolute-Error.md) | The mean of absolute errors between predictions and actual values. |
+| [Mean Squared Error](./regression/MSE.md) | The mean of squared errors between predictions and actual values. |
+| [Mean Absolute Error](./regression/MAE.md) | The mean of absolute errors between predictions and actual values. |
