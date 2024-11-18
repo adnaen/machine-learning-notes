@@ -23,3 +23,4 @@
 3. **Low Bias, High Variance:**
     . The model is too complex and fits not just the true patterns but also the noise, leading to overfitting.
     . It performs well on training data but poorly on test data due to overfitting.
+
