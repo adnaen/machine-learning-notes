@@ -12,6 +12,8 @@ Where:
 - $\hat{y}_i$ = Predicted value for the $i$-th data point
 - $|y_i - \hat{y}_i|$ = Absolute error (difference between actual and predicted values)
 
+## **Python Implementation**
+
 ```python
 from sklearn.metrics import mean_absolute_error
 
