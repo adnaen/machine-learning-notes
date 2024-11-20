@@ -7,5 +7,5 @@
 - Types
   - [Mean Square Error (MSE)](./regression/MSE.md)
   - [Mean Absolute Error (MAE)](./regression/MAE.md)
-  - [Binary Cross-Entropy](./classification/loss_functions/binary-cross-entropy.md)
-  - [Categorical Cross-Entropy](./classification/loss_functions/categorical-cross-entropy.md)
+  - [Binary Cross-Entropy](./classification/binary-cross-entropy.md)
+  - [Categorical Cross-Entropy](./classification/categorical-cross-entropy.md)
