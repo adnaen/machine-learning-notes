@@ -1,19 +1,19 @@
 # Logistics Regression
 
-. **About Logistics Regression**
+- **About Logistics Regression**
 
 1. Supervised Learning Model
 2. Classification Model
 3. Best for Binary Classification Problem
 4. Uses Sigmoid function
 
-. **Advantages**
+- **Advantages**
 
 1. Easy to implement
 2. Performs well on data with linear relationship
 3. Less prone to over-fitting for low dimensional dataset
 
-. **Disadvantages**
+- **Disadvantages**
 
 1. High dimensional dataset causes over-fitting
 2. Difficult to capture complex relationship in dataset
@@ -24,9 +24,9 @@
 
 ### Understand the Sigmoid Function
 
-<img src="../../../assets/sigmoid-function.png" width="600x" height="400px" />
+<img src="../../../../assets/sigmoid-function.png" width="600x" height="400px" />
 
-$$\\{z = w \cdot x + b}\$$
+$$\{z = w \cdot x + b}\$$
 
 - where:
   - w is the weight vector (model coefficients),
@@ -35,7 +35,7 @@ $$\\{z = w \cdot x + b}\$$
 
 <hr>
 
-$$\\{\text{Sigmoid Function } \hat{y} = \frac{1}{1 + e^{-z}}}\$$
+$$\{\text{Sigmoid Function } \hat{y} = \frac{1}{1 + e^{-z}}}\$$
 
 - where:
   - y^ is the predicted probability of the positive class (class 1).
