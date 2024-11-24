@@ -1,33 +1,31 @@
-# Machine Learning
+# Machine Learning Notes 📓
 
-- In simple words machine learning is we are teach machine to perform a specific task by learning from data.
+Welcome to my **Machine Learning Notes** repository! This is a living document where I record my learning journey in machine learning. Contributors are welcome to enhance and expand these notes.
 
-## Type's of Machine Learning
+I continuously update this repository as I learn more-currently, I’m at the **Logistic Regression** stage.
 
-1. ## Supervised Learning
+Feel free to explore and contribute! 🎉
 
-     - Models learn from labeled data
+## Why These Notes?
 
-| **Subcategory**    | **Definition**                                                            | **Example**                            | **Algorithms**                                                                                     |
-|--------------------|---------------------------------------------------------------------------|----------------------------------------|----------------------------------------------------------------------------------------------------|
-| [**Classification**](./Supervised-Learning/classification/)  | Predicts discrete values.                                                 | Predicting whether an image is of a dog or a cat. | [`Logistic Regression`](./Supervised-Learning/classification/Logistics-Regression/), `k-Nearest Neighbors`, `Support Vector Machine`, `Decision Tree Classifier`, `Random Forest Classifier`, `Naive Bayes` |
-| [**Regression**](./Supervised-Learning/regression/)      | Predicts continuous values.                                               | Predicting the amount of rainfall.     | `Linear Regression`, `Lasso Regression`, `Polynomial Regression`, `Support Vector Machine Regressor`, `Random Forest Regressor`, `Bayesian Linear Regression` |
+These notes aim to:
 
-2. ## Unsupervised Learning
+- Simplify complex machine learning concepts.
+- Provide a step-by-step learning path for aspiring ML enthusiasts.
+- Offer Python code implementations from scratch to build a solid understanding of models and algorithms.
 
-   - Model learn from unlabeled data (dataset does not contain a target variable)
-   - Trying to understand hidden pattern, clusters or structures from the data
+> **Pre-requisites:**  
+Before diving into machine learning, make sure you are familiar with essential data skills like:  
 
-| **Subcategory**          | **Definition**                                                            | **Example**                            | **Algorithms**                                                                                     |
-|--------------------------|---------------------------------------------------------------------------|----------------------------------------|----------------------------------------------------------------------------------------------------|
-| **Clustering**            | Groups similar data points.                                               | Anomaly detection.                     | `K-Means Clustering`, `Hierarchical Clustering`, `Density Based Spatial Clustering of Applications with Noise (DBSCAN)` |
-| **Dimensionality Reduction** | Reduces the number of features or dimensions.                            | N/A                                    | `Principal Component Analysis (PCA)`, `t-SNE`                                                    |
-| **Association**           | Discovers interesting relationships or patterns in a set of items in a large dataset. | Recommendation Systems.                | `Apriori Algorithm`, `FP-Growth`                                                                  |
+- **Data Analysis**
+- **Exploratory Data Analysis (EDA)**
+- **Data Preprocessing and Cleaning**
+- **Feature Engineering**
 
-4. ## Reinforcement Learning
+## Learning Path 🚀
 
-   - An Agent learns by interacting with an environment and receving rewards or penalties based on its actions
-
-| **Subcategory**          | **Definition**                                                            | **Example**                            | **Algorithms**                                                                                     |
-|--------------------------|---------------------------------------------------------------------------|----------------------------------------|----------------------------------------------------------------------------------------------------|
-| **Reinforcement Learning** | An agent learns by interacting with an environment and receiving rewards or penalties based on its actions. | Game AI, Robotics.                     | N/A                                                                                               |  
+1. [**Grasp the Fundamentals**](./overview-fundamentals/)
+2. [**Model Selection**](./model-selection/)
+3. [**Evaluation Metrics**](./evaluation-metrics/)
+4. [**Model Optimization**](./optimzation-and-training/)
+5. [**Models**](./models/)

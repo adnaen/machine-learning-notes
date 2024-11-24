@@ -29,7 +29,7 @@ MSE = mean_squared_error(y_true, y_pred)
 print("MSE is: ", MSE)
 ```
 
-**output**
+## **output**
 
 ```bash
 MSE is: 790.6

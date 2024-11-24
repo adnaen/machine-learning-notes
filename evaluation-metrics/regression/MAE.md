@@ -25,7 +25,7 @@ MAE = mean_absolute_error(y_true, y_pred)
 print("MAE is: ", MAE)
 ```
 
-**output**
+## **output**
 
 ```bash
 MAE is: 21.0
