@@ -1,4 +1,3 @@
-# Mean Square Error (MSE)
 
 The **Mean Squared Error (MSE)** is a metric that evaluates how well a model's predictions match the actual values. It calculates the average of the squared differences between the actual values ($y_i$) and predicted values ($\hat{y}_i$).
 

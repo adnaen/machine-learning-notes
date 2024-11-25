@@ -1,4 +1,3 @@
-# Machine Learning Notes 📓
 
 Welcome to my **Machine Learning Notes** repository! This is a living document where I record my learning journey in machine learning. Contributors are welcome to enhance and expand these notes.
 
