@@ -15,7 +15,7 @@
 
 - **Disadvantages**
 
-1. High dimensional dataset causes over-fitting
+1. High dimensional dataset (Dataset with more no.of features) causes over-fitting
 2. Difficult to capture complex relationship in dataset
 3. Sensitive to outliers
-4. Needs larger datasetq l
+4. Needs larger dataset
