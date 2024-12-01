@@ -1,6 +1,9 @@
 # Gradient Descent
 
-Gradient Descent is a optimization algorithm used for minimizing the cost function in various machine learning algorithms, It is used for updating the parameters of the learning model.
+Gradient Descent is a optimization algorithm used for minimizing the cost/loss function in various machine learning algorithms, It is used for updating the parameters of the learning model.
+
+> - Used in Linear Models & Neural Networks
+> - In Nural Network context this step also known as backpropagation
 
 ![gradient descent](../../assets/gradient_descent.jpeg)
 
@@ -14,9 +17,24 @@ Where:
 
 Gradient Descent is a method to minimize the loss function by iteratively updating model parameters such as weights ($w$) and bias ($b$).
 
+### A simple example
+
+- You're playing a video game where your character is lost on a hilly landscape, and you want to reach the lowest valley (global minimum). The valley represents the lowest loss for your machine learning model.
+
+Steps:
+
+1. Start Anywhere: You randomly start on the mountain (random initialization of weights & bias).
+2. Look Around: You check the steepness in all directions using derivatives:
+3. How steep is it if you move forward (partial derivative with respect to $x$)?
+4. How steep if you move sideways (partial derivative with respect to $y$)?
+5. Take a Step: You move downhill based on the gradient (combined steepness of all directions), but only a small step (controlled by the learning rate).
+6. Repeat: Keep repeating until the steepness is nearly zero (derivative = 0), meaning you’ve reached the bottom (global or local minimum).
+
 ---
 
 ### **1. Calculate Gradients**
+
+- **Gradient** = The "best guess" for which direction to move to reduce the loss.
 
 Gradients measure how the loss function changes with respect to weights ($w$) and bias ($b$).  
 Each loss function has a different gradient equation:
@@ -44,11 +62,11 @@ Each loss function has a different gradient equation:
   $dw$ and $db$ depend on the sign of $(\hat{y}_i - y_i)$:
   
   - If $\hat{y}_i > y_i$:
-    
+
     $$dw = \frac{1}{n} \sum_{i=1}^n x_i, db = \frac{1}{n}$$
-    
+
   - If $\hat{y}_i < y_i$:
-    
+
     $$dw = -\frac{1}{n} \sum_{i=1}^n x_i, db = -\frac{1}{n}$$
 
 ---
@@ -102,20 +120,11 @@ Where:
   $$
   w = w - \alpha \cdot dw
   $$
-  
-  Where:
-  
-  $$
-  dw = (\hat{y} - y) \cdot x
-  $$
 
 - **For bias ($b$):**
-  
-  $$b = b - \alpha \cdot db$$
-  
-  Where:
-  
-  $$db = \hat{y} - y$$
+  $$
+  b = b - \alpha \cdot db
+  $$
 
 #### **Where**
 
@@ -124,6 +133,3 @@ Where:
 - $\alpha$: Learning rate (controls how large the parameter updates are).  
 - $dw$: Gradient of the loss with respect to $w$.  
 - $db$: Gradient of the loss with respect to $b$.  
-- $x$: Input feature.  
-- $y$: True label.  
-- $\hat{y}$: Predicted probability.  
