@@ -13,8 +13,10 @@
 | [**Classification**](./Supervised-Learning/classification/)  | Predicts discrete values.                                                 | Predicting whether an image is of a dog or a cat. | [`Logistic Regression`](./Supervised-Learning/classification/Logistics-Regression/), `k-Nearest Neighbors`, `Support Vector Machine`, `Decision Tree Classifier`, `Random Forest Classifier`, `Naive Bayes` |
 | [**Regression**](./Supervised-Learning/regression/)      | Predicts continuous values.                                               | Predicting the amount of rainfall.     | `Linear Regression`, `Lasso Regression`, `Polynomial Regression`, `Support Vector Machine Regressor`, `Random Forest Regressor`, `Bayesian Linear Regression` |
 
-   - Model learn from unlabeled data (dataset does not contain a target variable)
-   - Trying to understand hidden pattern, clusters or structures from the data
+2. ## Unsupervised Learning
+
+- Model learn from unlabeled data (dataset does not contain a target variable)
+- Trying to understand hidden pattern, clusters or structures from the data
 
 | **Subcategory**          | **Definition**                                                            | **Example**                            | **Algorithms**                                                                                     |
 |--------------------------|---------------------------------------------------------------------------|----------------------------------------|----------------------------------------------------------------------------------------------------|
@@ -22,7 +24,7 @@
 | **Dimensionality Reduction** | Reduces the number of features or dimensions.                            | N/A                                    | `Principal Component Analysis (PCA)`, `t-SNE`                                                    |
 | **Association**           | Discovers interesting relationships or patterns in a set of items in a large dataset. | Recommendation Systems.                | `Apriori Algorithm`, `FP-Growth`                                                                  |
 
-4. ## Reinforcement Learning
+3. ## Reinforcement Learning
 
    - An Agent learns by interacting with an environment and receving rewards or penalties based on its actions
 
