@@ -4,4 +4,4 @@
 
 | Model                             | Best for                                              |
 |-----------------------------------|-------------------------------------------------------|
-| [Linear Regression](./Linear-regression//)              | Dataset with linear relationship|
+| [Linear Regression](./linear-regression//)              | Dataset with linear relationship|

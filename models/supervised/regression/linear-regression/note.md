@@ -11,14 +11,14 @@ $${\hat{y} = m_1 \cdot X_1 + ... + m_2 \cdot X_2 + c}$$
 - where:
   - $\hat{y}$ predicted value.
   - $X$ is the feature (input data).
-  - $m$ Slop(coeffient) of the stright line.
+  - $m$ Slop(coefficient) of the straight line.
   - $c$ intercept (what is the value of y when x = 0).
 
 ### ⚙️ **Workflow**
 
 1. **Initialize Model/Hyper Parameters**
    - Set the **learning rate** (e.g., 0.01) and **number of epochs**.
-   - Initialize **slop(weight/coeffient)** and **Intercept(bias)** to small random values or zeros.
+   - Initialize **Coefficient(slop)** and **Intercept** to small random values or zeros.
 
 2. **Calculate prediction**
    - Calculate prediction by **Linear Equation**
@@ -32,8 +32,8 @@ $${\hat{y} = m_1 \cdot X_1 + ... + m_2 \cdot X_2 + c}$$
    | **MAE**           | Low                     | When you have outliers and want to treat all errors equally.     | Works well with skewed or non-normal data.  |
 
 4. **Gradient Descent**
-   - Compute the **gradients** of the loss function with respect to the weights ($w$) and bias ($b$).
-   - Use **gradient descent** to update the weights and bias:
+   - Compute the **gradients** of the loss function with respect to the coefficient ($m$) and intercept ($c$).
+   - Use **gradient descent** to update the slop and intercept:
    - [Know about Gradient Descent](../../../../optimzation-and-training/gradient-descent/note.md)
 
 5. **Repeat Steps 2–5**

@@ -45,9 +45,9 @@ Each loss function has a different gradient equation:
 
 - **Gradients**:
   
-  $$dw = \frac{2}{n} \sum_{i=1}^n (\hat{y}_i - y_i) x_i$$
+  $$dw = \frac{2}{n} \sum_{i=1}^n x_i(\hat{y}_i - y_i)$$
   
-  $$db = \frac{2}{n} \sum_{i=1}^n (\hat{y}_i - y_i)$$
+  $$db = - \frac{2}{n} \sum_{i=1}^n (\hat{y}_i - y_i)$$
 
 #### **1 Mean Absolute Error (MAE)**  
 

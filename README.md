@@ -14,15 +14,15 @@ These notes aim to:
 > Pre-requisites:
 > Before diving into machine learning, make sure you are familiar with essential data skills like:  
 >
+> - Python
 > - Data Analysis
 > - Exploratory Data Analysis (EDA)
-> - Data Preprocessing and Cleaning
-> - Feature Engineering
+> - Data Preprocessing
 
 ## Learning Path 🚀
 
-1. [**Grasp the Fundamentals**](./overview-fundamentals/)
+1. [**Grasp the Fundamentals**](./fundamentals/)
 2. [**Models**](./models/)
 3. [**Model Selection**](./model-selection/)
-4. [**Model Optimization**](./optimzation-and-training/)
+4. [**Model Optimization**](./optimzation/)
 5. [**Evaluation Metrics**](./evaluation-metrics/)
