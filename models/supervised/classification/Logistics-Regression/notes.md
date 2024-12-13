@@ -1,11 +1,11 @@
 # 🧠 Maths Behind Logistic Regression
 
-###  ➡️ **Linear Equation**
+### ➡️ **Linear Equation**
 
 #### $${z = w \cdot x + b}$$
 
 - where:
-  - $z$ is known as logits / Weighted sum in the context of Logistic Regression
+  - $z$ is known as Logits / Weighted sum in the context of Logistic Regression
   - $w$ is the weight of the features (a.k.a model coefficients),
   - $x$ is the feature (input data),
   - $b$ is the bias term (a.k.a model intercept) .
@@ -23,7 +23,7 @@ $$\hat{y} = \frac{1}{1 + e^{-z}}$$
 
 **Softmax**
 
-$$\hat{y}_i = \frac{e^{z_i}}{\sum_{j} e^{z_j}}$$
+$$\hat{y}_i = \frac{e^{z_i}}{{\sum_j} e^{z_j}}$$
 
 - Where:
   - $\hat{y}_i$ is the predicted probability for the class $i$.
@@ -41,13 +41,17 @@ $$\hat{y}_i = \frac{e^{z_i}}{\sum_{j} e^{z_j}}$$
    - **For binary classification**: Apply the **sigmoid** function to transform the logits into probabilities
    - **For multi-class classification**: Apply the **softmax** function to transform the logits into probabilities:
 
-4. **Backward Propagation**
-   - Compute the **gradients** of the appropriate loss function with respect to the weights ($w$) and bias ($b$).
-   - Update current model Parameters such as Weight and Bias
-5. **Repeat Steps 2–5**
+3. **Backward Propagation**
+
+- Compute the **gradients** of the appropriate loss function with respect to the weights ($w$) and bias ($b$).
+- Update current model Parameters such as Weight and Bias
+- [Know about Gradient Descent](../../../../optimzation-and-training/gradient-descent/note.md)
+
+4. **Repeat Steps 2–5**
+
    - Iterate through the forward and backward propagation steps for the specified number of epochs or until convergence (when the loss stops decreasing significantly).
 
-6. **Prediction**
+5. **Prediction**
    - After training, use the learned weights and bias to predict probabilities for new data.
    - **For binary classification**: Apply a threshold (e.g., $\hat{y} > 0.5$) to classify probabilities into discrete class labels (0 or 1).
    - **For multi-class classification**: Choose the class with the highest probability as the predicted class.

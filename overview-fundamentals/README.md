@@ -1,8 +1,8 @@
-# Machine Learning
+# 🤖 Machine Learning
 
 - In simple words machine learning is we are teach machine to perform a specific task by learning from data.
 
-## Type's of Machine Learning
+## ➡️ Type's of Machine Learning
 
 1. ## Supervised Learning
 

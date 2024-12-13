@@ -1,2 +1,3 @@
-#  How to choose a model? 
+# 🦾 How to choose a model?
+
 ![ml cheat sheet](../assets/ml_cheat_sheet.jpeg)
