@@ -2,8 +2,8 @@
 
 Gradient Descent is a optimization algorithm used for minimizing the cost/loss function in various machine learning algorithms, It is used for updating the parameters of the learning model.
 
-> - Used in Linear Models & Neural Networks
-> - In Nural Network context this step also known as backpropagation
+- Used in Linear Models & Neural Networks
+- In Neural Network context this step also known as backpropagation
 
 ![gradient descent](../../assets/gradient_descent.jpeg)
 
@@ -105,15 +105,7 @@ Each loss function has a different gradient equation:
 
 Once gradients are calculated, update the weights ($w$) and bias ($b$) as follows:
 
-$w = w - \alpha \cdot dw$  
-$b = b - \alpha \cdot db$
 
-Where:
-
-- $\alpha$: The **learning rate**, which controls how much the weights and bias are adjusted.
-- $dw$, $db$: Gradients calculated based on the loss function.
-
-### Equation
 
 - **For weights ($w$):**
 

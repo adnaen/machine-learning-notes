@@ -1,72 +1,57 @@
-# Maths Behind Linear Regression
+# 🧠 Maths Behind Linear Regression
 
-### Linear Equation
+### ➡️ **Linear Equation**
 
-#### $${z = w \cdot x + b}$$
+- For single variable 
+#### $${\hat{y} = m \cdot X + c}$$ 
 
-- where:
-  - $z$ is known as logits / Weighted sum in the context of Linear Regression
-  - $w$ is the weight of the features (a.k.a model coefficients),
-  - $x$ is the feature (input data),
-  - $b$ is the bias term (a.k.a model intercept) .
-
-### Activation Functions
-
-#### Sigmoid
-
-##### $${\hat{y} = \frac{1}{1 + e^{-z}}}$$
+- For multi variable 
+#### $${\hat{y} = m_1 \cdot X_1 + ... + m_2 \cdot X_2 + c}$$
 
 - where:
-  - $\hat{y}$ is the predicted probability of the class.
-  - Here, we transform logits into probability.
-  - The output of the sigmoid function will always be between 0 and 1, which makes it interpretable as a probability.
+  - $\hat{y}$ predicted value.
+  - $X$ is the feature (input data).
+  - $m$ Slop(coeffient) of the stright line.
+  - $c$ intercept (what is the value of y when x = 0).
 
-#### Softmax Activation Function
+### ⚙️ **Workflow**
 
-##### $$\hat{y}_i = \frac{e^{z_i}}{\sum_{j} e^{z_j}}$$
-
-- Where:
-  - $\hat{y}_i$ is the predicted probability for the class $i$.
-  - The softmax function transforms the logits for each class into probabilities.
-  - The sum of the probabilities for all classes will always be 1, making them interpretable as a probability distribution over the classes.
-
-### Workflow
-
-1. **Initialize Model Parameters**
+1. **Initialize Model/Hyper Parameters**
    - Set the **learning rate** (e.g., 0.01) and **number of epochs**.
-   - Initialize **weights** and **bias** to small random values or zeros.
+   - Initialize **slop(weight/coeffient)** and **Intercept(bias)** to small random values or zeros.
 
-2. **Forward Propagation**
-   - Calculate the **logits**
-   - **For binary classification**: Apply the **sigmoid** function to transform the logits into probabilities:
-
-   - **For multi-class classification**: Apply the **softmax** function to transform the logits into probabilities:
+2. **Calculate prediction**
+   - Calculate prediction by **Linear Equation**
 
 3. **Compute Loss**
-   - **For binary classification**: Use **binary cross-entropy** loss:
+   - You can use either **MSE** or **MAE**
 
-   - **For multi-class classification**: Use **categorical cross-entropy** loss:
+| **Loss Function** | **Outlier Sensitivity** | **When to Use**                             | **Data Distribution**                       |
+|--------------------|--------------------------|---------------------------------------------|---------------------------------------------|
+| **MSE**           | High                    | When large errors matter more (e.g., predicting house prices). | Best for normally distributed data.         |
+| **MAE**           | Low                     | When you have outliers and want to treat all errors equally.     | Works well with skewed or non-normal data.  |
 
-4. **Backward Propagation**
-   - Compute the **gradients** of the loss function with respect to the weights (\( w \)) and bias (\( b \)).
+
+4. **Gradient Descent**
+   - Compute the **gradients** of the loss function with respect to the weights ($w$) and bias ($b$).
      - For **binary classification**:
 
      $$
-     \frac{\partial \text{Loss}}{\partial w} = \hat{y} - y
+     dw = \hat{y} - y
      $$
 
      $$
-     \frac{\partial \text{Loss}}{\partial b} = \hat{y} - y
+     db = \hat{y} - y
      $$
 
      - For **multi-class classification**, the gradient for the softmax output would be:
 
      $$
-     \frac{\partial \text{Loss}}{\partial w_i} = \hat{y}_i - y_i
+     dw = \hat{y}_i - y_i
      $$
 
      $$
-     \frac{\partial \text{Loss}}{\partial b_i} = \hat{y}_i - y_i
+     db = \hat{y}_i - y_i
      $$
 
 5. **Update Parameters**
@@ -74,24 +59,22 @@
      - For weights:
 
      $$
-     w = w - \alpha \cdot \frac{\partial \text{Loss}}{\partial w}
+     w = w - dw
      $$
 
      - For bias:
 
      $$
-     b = b - \alpha \cdot \frac{\partial \text{Loss}}{\partial b}
+     b = b - db
      $$
 
      where:
-     - \( \alpha \) is the learning rate,
-     - \( \frac{\partial \text{Loss}}{\partial w} \) is the gradient with respect to the weights,
-     - \( \frac{\partial \text{Loss}}{\partial b} \) is the gradient with respect to the bias.
+     - $\alpha$ is the learning rate,
+     - $dw$ is the gradient with respect to the coeffient(weight),
+     - $db$ is the gradient with respect to the intercept(bias).
 
 6. **Repeat Steps 2–5**
    - Iterate through the forward and backward propagation steps for the specified number of epochs or until convergence (when the loss stops decreasing significantly).
 
 7. **Prediction**
-   - After training, use the learned weights and bias to predict probabilities for new data.
-   - **For binary classification**: Apply a threshold (e.g., \( \hat{y} > 0.5 \)) to classify probabilities into discrete class labels (0 or 1).
-   - **For multi-class classification**: Choose the class with the highest probability as the predicted class.
+
