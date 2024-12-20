@@ -45,7 +45,7 @@ Each loss function has a different gradient equation:
 
 - **Gradients**:
   
-  $$dw = \frac{2}{n} \sum_{i=1}^n x_i(\hat{y}_i - y_i)$$
+  $$dw = - \frac{2}{n} \sum_{i=1}^n x_i(\hat{y}_i - y_i)$$
   
   $$db = - \frac{2}{n} \sum_{i=1}^n (\hat{y}_i - y_i)$$
 
@@ -55,15 +55,9 @@ Each loss function has a different gradient equation:
   $$L = \frac{1}{n} \sum_{i=1}^n | \hat{y}_i - y_i |$$
 
 - **Gradients**:  
-  $dw$ and $db$ depend on the sign of $(\hat{y}_i - y_i)$:
-  
-  - If $\hat{y}_i > y_i$:
+   $$ dw = -\frac{1}{n} \sum_{i=1}^n x_i \cdot \text{sign}(\hat{y}_i - y_i)$$
 
-    $$dw = \frac{1}{n} \sum_{i=1}^n x_i, db = \frac{1}{n}$$
-
-  - If $\hat{y}_i < y_i$:
-
-    $$dw = -\frac{1}{n} \sum_{i=1}^n x_i, db = -\frac{1}{n}$$
+   $$ db = -\frac{1}{n} \sum_{i=1}^n \text{sign}(\hat{y}_i - y_i)$$
 
 #### **1 Binary Cross-Entropy (BCE)**  
 
