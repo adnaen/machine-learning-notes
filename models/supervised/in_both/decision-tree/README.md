@@ -9,7 +9,7 @@
 - `min_sample_leaf`  : Minimum samples for splitting leaf nodes
 - `max_features`     : Maximum feature for splitting
 - `criterion`        : Defines the function used to measure the quality of a split
-    - `gini` -> for gini impurity
+    - `gini` -> for gini impurity(mainly used for classification)
     - `entropy` -> for information gain
 
 # Advantages
