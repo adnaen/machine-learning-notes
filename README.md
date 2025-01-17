@@ -1,6 +1,6 @@
-Welcome to my **Machine Learning Notes** repository! This is a living document where I record my learning journey in machine learning. Contributors are welcome to enhance and expand these notes.
+This is a living document where I record my learning journey in machine learning. Contributors are welcome to enhance and expand these notes.
 
-I continuously update this repository as I learn more-currently, I’m at the **Linear Regression** stage.
+I continuously update this repository as I learn more-currently, I’m at the **Tree Based Models** stage.
 
 ## Why These Notes
 
