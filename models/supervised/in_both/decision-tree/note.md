@@ -5,4 +5,3 @@
 | `min_samples_leaf`   | Minimum number of samples required at a leaf node.| [1, 5, 10, 20]                    |
 | `max_features`       | Maximum number of features considered for a split.| ["auto", "sqrt", "log2", None]    |
 | `criterion`          | Function to measure split quality (classification).| ["gini", "entropy", "log_loss"]   |
-| `splitter`           | Strategy used to split at each node.              | ["best", "random"]                |
