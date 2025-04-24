@@ -1,6 +1,6 @@
 This is a living document where I record my learning journey in machine learning. Contributors are welcome to enhance and expand these notes.
 
-I continuously update this repository as I learn more-currently, I’m at the **Tree Based Models** stage.
+I continuously update this repository as I learn more-currently, I’m at the **RNN Model Architecture** stage.
 
 ## Why These Notes
 
