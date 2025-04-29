@@ -2,7 +2,7 @@
 
 ## 1. Prepare Input Data
 
-> ⚡ **Important Note:**  
+> [NOTE!]
 > In order to use `nn.Embedding()`, we need to manually convert all tokens (words) into their corresponding vocabulary IDs.  
 > **Because:**  
 > `nn.Embedding()` only understands numbers, not text!  
