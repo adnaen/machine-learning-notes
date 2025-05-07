@@ -1,24 +1,17 @@
-# How To
+# **Large Language Model (LLM)**
 
-1. **Tokenize word in LLM**
-A: Unlike Traditional NLP, it don't with whitespace or punctuation.
-It tokenize text with based on statistics measures and intelligence
+in simply
+- LLM is Large Neural Network (Transformer) for design, understand , generate and respond to human like **Text**.
+- LLM is trained on huge amount of data.
+- It have billions parameters while training (weights).
 
-```plane text
-e.g. 
-text = "I am playing"
-# in tradational NLP
-tokens = ["i", "am", "playing"]
+## Pre-Training
+- Train a LLM with huge amount of data globally not specific.
+- Goal: Understand the Language rules, Grammar and general word knowledge
+- e.g. GPT. it a pre-trained model that understand human like natural language
 
-# in LLM
-tokens = ["i", "am", "play", "ing"]
-```
-
-> It help to reduce vocab size 100k -> 30k.
-
-- **Most of LLM Mainly Uses 3 Tokenizing Technique**    
-    - Byte Pair Encoding (BPE) : gpt-2
-    - WordPiece : BERT
-    - SentencePiece : T5, ALBERT
+## Fine-Tuning
+- Take a Pre-trained model and train it with a specific context data in order to perform that LLM with that context
+- e.g. ChatGPT . which is Fine-Tuned the GPT model to interact with humans
 
 
