@@ -1,14 +1,5 @@
 This is a living document where I record my learning journey in machine learning. Contributors are welcome to enhance and expand these notes.
-
-I continuously update this repository as I learn more-currently, I’m at the **Transformer (LLM)** stage.
-
-## Why These Notes
-
-These notes aim to:
-
-- Simplify complex machine learning concepts.
-- Provide a step-by-step learning path for aspiring ML enthusiasts.
-- Offer Python code implementations from scratch to build a solid understanding of models and algorithms.
+**I've almost complete my journey**. `NOW ITS TIME TO LEARN TOOLS AND BUILD SOMETHING.`
 
 > [!NOTE]
 > Pre-requisites:
